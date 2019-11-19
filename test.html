@@ -10,6 +10,16 @@
   <h1>test 2</h1>
   <script>
     //this is a script
+    console.log(1);
+    new Promise((resolve)=>{
+      console.log(2);
+      resolve();
+    }).then(
+      console.log(3)
+    );
+    setTimeout(()=>{
+      console.log(4)
+    },0)
   </script>
 </body>
 </html>
